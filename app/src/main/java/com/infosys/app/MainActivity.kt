@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         customAdapter = CustomAdapter(this@MainActivity,itemsList)
         val layoutManager = LinearLayoutManager(applicationContext)
         recyclerView.layoutManager = layoutManager
-//        recyclerView.itemAnimator = DefaultItemAnimator()
+        recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = customAdapter
         prepareItems()
     }
